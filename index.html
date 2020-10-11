@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-day Forecast</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href = "forecast.css">
+  </head>
+<body>
+    <nav class="navbar navbar-light bg-dark nav container-fluid-nav text-center">
+        <p class="text-center nav">Weather Dashboard</p>
+        </div>
+      </nav>
+
+ 
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 city-pick content-align-center">
+
+        <h4 class="heading">U.S. Weather:</h4>
+          <div class="input-box input-group mb-3">
+            <input id = "userCity" type="text" class="form-control" placeholder="City Name" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="newCitySubmit" class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+          </div>
+
+<!-- Below is where all the city buttons have been appended -->
+  <div id="constantCities-view"></div>
+</div>
+
+      <div class="col-md-8">
+        <div class="row">
+  
+        <div class="card currentWeatherContainer">
+          <div id="today" class="card-header">
+            Featured
+          </div>
+          <div id="currentWeather" class="currentWeather"></div>
+      </div>
+
+           
+    </div>
+
+<h1>5 Day Forecast:</h1>
+        <div class="row">
+          <div class="col card-body">
+            <h5 id="dayOne"class="card-title">Today</h5>
+            <p id="dayOneWeather" class="dayOneWeather card-text"></p>
+          </div>
+
+          <div class="col card-body">
+            <h5 id="dayTwo" class="card-title">Tomorrow</h5>
+            <p id="dayTwoWeather"class="dayTwoWeather card-text"></p>
+          </div>
+
+          <div class="col card-body">
+            <h5 id="dayThree" class="card-title">3/5</h5>
+            <p id="dayThreeWeather" class="dayThreeWeather card-text"></p>
+          </div>
+
+          <div class="col card-body">
+            <h5 id="dayFour" class="card-title">4/5</h5>
+            <p id="dayFourWeather" class="dayFourWeather card-text"></p>
+          </div>
+
+          <div class="col card-body">
+            <h5 id="dayFive" class="card-title">5/5</h5>
+            <p id="dayFiveWeather" class="dayFiveWeather card-text"></p>
+          </div>
+        
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript' src='config.js'></script>
+<script src="forecast.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+</body>
+</html>

@@ -41,6 +41,9 @@ $(".city-btn").on("click", function(cityClick) {
 
   var cityInput = $(cityClick.target).text();
 
+  var config = {
+    myKey: 'bc0eec7ae64ce1b8bb17e6d55e844d38' }
+
   var apiKey = config.myKey;
   var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=" + apiKey;
   
@@ -100,6 +103,7 @@ $("#newCitySubmit").on("click", function(event) {
   event.preventDefault();
     $(".currentWeather").empty();
 var cityInput = $("#userCity").val();
+
 var apiKey = config.myKey;
 var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=" + apiKey;
 

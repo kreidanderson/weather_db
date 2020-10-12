@@ -25,11 +25,13 @@ The design of this project is minimal and simple for both ease to the eye and us
 - I was unable to code the local storage so that the last search appeared on the screen when the browser was refreshed. However, the last search does save in local storage. 
 
 ## NOTE:
-I hid my API key by using a config.js file so you as the user will need to make your own javascript 'config.js' file, with your own key in an object:
+I hid my API key by using a config.js file so IF the key was a paid key, you as the user would need to make your own javascript 'config.js' file, with your own key in an object:
 Copy and paste this into your config.js file: 
 
 var config = {
 myKey : *"YOUR KEY GOES HERE"*
 }
+
+but because the key is free, you don't need to do that in this instance.
 
 you can get your own API key by creating an account here: https://home.openweathermap.org/users/sign_in and requesting an API key.

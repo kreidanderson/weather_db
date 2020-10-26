@@ -45,7 +45,7 @@ $(".city-btn").on("click", function(cityClick) {
     myKey: 'bc0eec7ae64ce1b8bb17e6d55e844d38' }
 
   var apiKey = config.myKey;
-  var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=" + apiKey;
+  var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=" + apiKey;
   
       // We then created an AJAX call
       $.ajax({

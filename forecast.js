@@ -178,7 +178,7 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput 
         let lat1 = response.coord.lat;
         let lon1 = response.coord.lon;
 
-        queryLatLong = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat1 + "&lon=" + lon1 + "&appid=" + apiKey;
+        queryLatLong = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat1 + "&lon=" + lon1 + "&appid=" + apiKey;
         $.ajax({
             url: queryLatLong,
             method: "GET"
@@ -225,7 +225,7 @@ $(".city-btn").on("click", function(cityClick) {
           let lat1 = response.coord.lat;
           let lon1 = response.coord.lon;
   
-          queryLatLong = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat1 + "&lon=" + lon1 + "&appid=" + apiKey;
+          queryLatLong = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat1 + "&lon=" + lon1 + "&appid=" + apiKey;
           $.ajax({
               url: queryLatLong,
               method: "GET"
